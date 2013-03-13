@@ -164,5 +164,3 @@ set scrolloff=7
 "insert blank line above or below current line from normal mode
 nnoremap _ :put =''<cr>
 nnoremap - :put! =''<cr>
-Window size: x 
-Viewport size: x
