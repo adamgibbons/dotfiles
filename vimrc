@@ -1,6 +1,6 @@
 " Pathogeen Configurations
-call pathogen#infect()
-call pathogen#helptags()
+" call pathogen#infect()
+" call pathogen#helptags()
 
 set encoding=utf-8
 set nocompatible               " be iMproved
@@ -9,7 +9,7 @@ filetype indent on
 
 " Colours
 set background=dark
-colorscheme solarized
+colorscheme desert
 
 " Basic
 syntax enable
