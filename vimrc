@@ -54,10 +54,10 @@ set statusline=%#identifier#
 set statusline+=[%t]    "tail of the filename
 set statusline+=%*
 
-" Syntastic Settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+ " Syntastic Settings
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 " General Code Folding
 """"""""""""""""""""""
