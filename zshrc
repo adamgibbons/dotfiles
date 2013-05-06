@@ -40,4 +40,5 @@ source $ZSH/oh-my-zsh.sh
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 # Aliases
+alias vim="mvim -v"
 alias vi="vim"
