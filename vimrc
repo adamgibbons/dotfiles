@@ -4,12 +4,11 @@ call pathogen#helptags()
 
 set encoding=utf-8
 set nocompatible               " be iMproved
-filetype off                   " required!
+"filetype off                   " required!
 filetype indent on
 
 " Colours
 set background=dark
-colorscheme desert
 
 " Basic
 syntax enable
@@ -53,11 +52,6 @@ set laststatus=2
 set statusline=%#identifier#
 set statusline+=[%t]    "tail of the filename
 set statusline+=%*
-
- " Syntastic Settings
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
 
 " General Code Folding
 """"""""""""""""""""""
@@ -164,4 +158,3 @@ set scrolloff=7
 "insert blank line above or below current line from normal mode
 nnoremap _ :put =''<cr>
 nnoremap - :put! =''<cr>
-
