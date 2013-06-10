@@ -35,6 +35,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct
 
 # Customize to your needs...
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
