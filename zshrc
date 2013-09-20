@@ -44,7 +44,7 @@ unsetopt correct
 alias vim="mvim -v"
 alias vi="vim"
 
-
+goenv global 1.1
 export GOPATH="$HOME/go-projects"
 export PATH=$PATH:GOPATH
 PATH=$PATH:node_modules/.bin
