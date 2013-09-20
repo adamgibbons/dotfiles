@@ -44,7 +44,8 @@ unsetopt correct
 alias vim="mvim -v"
 alias vi="vim"
 
-PATH=$PATH:node_modules/.bin
+
 export GOPATH="$HOME/go-projects"
 export PATH=$PATH:GOPATH
+PATH=$PATH:node_modules/.bin
 ulimit -n 2048
