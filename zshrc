@@ -45,7 +45,7 @@ alias vim="mvim -v"
 alias vi="vim"
 
 goenv global 1.1
-export GOPATH="$HOME/go-projects"
+export GOPATH="$HOME/projects/go-projects"
 export PATH=$PATH:GOPATH
 PATH=$PATH:node_modules/.bin
 ulimit -n 2048
