@@ -57,6 +57,7 @@ goenv global 1.1
 export GOPATH="$HOME/projects/go-projects"
 export PATH=$PATH:GOPATH
 PATH=$PATH:node_modules/.bin
+PATH=$PATH:/usr/local/heroku/bin
 ulimit -n 2048
 
 source $(brew --prefix nvm)/nvm.sh
