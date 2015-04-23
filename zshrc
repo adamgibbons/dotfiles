@@ -51,9 +51,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
-goenv global 1.1
+#goenv global 1.1
 export GOPATH="$HOME/projects/go-projects"
 export PATH=$PATH:GOPATH
 PATH=$PATH:node_modules/.bin
@@ -87,4 +87,8 @@ source $(brew --prefix nvm)/nvm.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export RBENV_ROOT=/usr/local/var/rbenv
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
