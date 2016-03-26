@@ -51,17 +51,12 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
-#goenv global 1.1
-export GOPATH="$HOME/projects/go-projects"
-export PATH=$PATH:GOPATH
 PATH=$PATH:node_modules/.bin
 PATH=$PATH:/usr/local/heroku/bin
 PATH=$PATH:$HOME/npm/bin
 ulimit -n 2048
-
-source $(brew --prefix nvm)/nvm.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -90,6 +85,5 @@ source $(brew --prefix nvm)/nvm.sh
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-export RBENV_ROOT=/usr/local/var/rbenv
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export NVM_DIR="/Users/gibber/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
