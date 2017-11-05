@@ -103,4 +103,3 @@ export SDKMAN_DIR="/Users/gibber/.sdkman"
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 
-export HOMEBREW_GITHUB_API_TOKEN=5e2f86c99d7f1332f9766ed3dbed604e6fafc24b
