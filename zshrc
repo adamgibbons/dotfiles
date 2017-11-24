@@ -103,3 +103,4 @@ export SDKMAN_DIR="/Users/gibber/.sdkman"
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 
+export PATH=$PATH:/opt/apache-maven/bin
