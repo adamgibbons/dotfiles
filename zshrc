@@ -104,3 +104,17 @@ export SDKMAN_DIR="/Users/gibber/.sdkman"
 [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 
 export PATH=$PATH:/opt/apache-maven/bin
+
+function decrypt() {
+  if [ -z $1 ]; then
+    echo "Missing environment. try decrypt dev <CIPHERTEXT>"
+    return
+  fi
+
+  if [ -z $2 ]; then
+    echo "Missing base64 encoded ciphertext. try decrypy dev <CIPHERTEXT>"
+    return
+  fi
+  echo $2 | base64 --decode > /tmp/aws_decrypt.bin
+  aws kms decrypt --profile stedi-$1  --ciphertext-blob fileb:///tmp/aws_decrypt.bin  --output text --query Plaintext | base64 --decode
+}
