@@ -85,8 +85,8 @@ ulimit -n 2048
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-export NVM_DIR="/Users/gibber/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 # added by travis gem
 [ -f /Users/gibber/.travis/travis.sh ] && source /Users/gibber/.travis/travis.sh
