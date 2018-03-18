@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:~/.composer/vendor/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 PATH=$PATH:node_modules/.bin
 PATH=$PATH:/usr/local/heroku/bin
