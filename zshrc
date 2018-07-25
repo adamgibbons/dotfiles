@@ -83,7 +83,7 @@ ulimit -n 2048
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
@@ -118,3 +118,6 @@ function decrypt() {
   echo $2 | base64 --decode > /tmp/aws_decrypt.bin
   aws kms decrypt --profile stedi-$1  --ciphertext-blob fileb:///tmp/aws_decrypt.bin  --output text --query Plaintext | base64 --decode
 }
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+
+eval "$(rbenv init -)"
