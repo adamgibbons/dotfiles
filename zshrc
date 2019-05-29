@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bower brew bundler colorize gem git github gitignore heroku node npm osx ruby sublime)
+plugins=(brew bundler colorize gem git github gitignore heroku node npm osx ruby sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,7 +86,7 @@ ulimit -n 2048
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 
 # added by travis gem
 [ -f /Users/gibber/.travis/travis.sh ] && source /Users/gibber/.travis/travis.sh
@@ -121,3 +121,4 @@ function decrypt() {
 export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 eval "$(rbenv init -)"
+export PATH="/usr/local/opt/mongodb-community@3.2/bin:$PATH"
