@@ -122,3 +122,9 @@ export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 eval "$(rbenv init -)"
 export PATH="/usr/local/opt/mongodb-community@3.2/bin:$PATH"
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/adam/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/adam/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zshexport
+
+PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
