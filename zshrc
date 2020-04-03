@@ -128,3 +128,10 @@ export PATH="/usr/local/opt/mongodb-community@3.2/bin:$PATH"
 [[ -f /Users/adam/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/adam/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zshexport
 
 PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+# use android java
+export JAVA_HOME='/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home'
