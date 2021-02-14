@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Skip verification of insecure directories before loading completions.
+ZSH_DISABLE_COMPFIX="true"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -85,47 +88,8 @@ ulimit -n 2048
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-
-# added by travis gem
-[ -f /Users/gibber/.travis/travis.sh ] && source /Users/gibber/.travis/travis.sh
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/gibber/.sdkman"
-[[ -s "/Users/gibber/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/gibber/.sdkman/bin/sdkman-init.sh"
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
-export PATH=$PATH:/opt/apache-maven/bin
-
-function decrypt() {
-  if [ -z $1 ]; then
-    echo "Missing environment. try decrypt dev <CIPHERTEXT>"
-    return
-  fi
-
-  if [ -z $2 ]; then
-    echo "Missing base64 encoded ciphertext. try decrypy dev <CIPHERTEXT>"
-    return
-  fi
-  echo $2 | base64 --decode > /tmp/aws_decrypt.bin
-  aws kms decrypt --profile stedi-$1  --ciphertext-blob fileb:///tmp/aws_decrypt.bin  --output text --query Plaintext | base64 --decode
-}
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
-
 eval "$(rbenv init -)"
 export PATH="/usr/local/opt/mongodb-community@3.2/bin:$PATH"
-
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/adam/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/adam/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zshexport
 
 PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
 
