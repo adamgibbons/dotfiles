@@ -59,6 +59,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sb
 PATH=$PATH:node_modules/.bin
 PATH=$PATH:/usr/local/heroku/bin
 PATH=$PATH:$HOME/npm/bin
+PATH=$PATH:$HOME/.meteor
 ulimit -n 2048
 
 # You may need to manually set your language environment
@@ -99,3 +100,9 @@ PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
 
 # use android java
 export JAVA_HOME='/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home'
+
+export GOPATH=$(go env GOPATH)
+export GOROOT=$(go env GOROOT)
+export GOPRIVATE=github.com/nextmv-io/*
+export PATH=$PATH:$GOPATH/bin
+
