@@ -106,3 +106,8 @@ export GOROOT=$(go env GOROOT)
 export GOPRIVATE=github.com/nextmv-io/*
 export PATH=$PATH:$GOPATH/bin
 
+source ~/dotfiles/lib/zsh-autoenv/autoenv.zsh
+source ~/dotfiles/lib/zsh-autoenv/autoenv.zsh
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
