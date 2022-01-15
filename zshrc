@@ -106,13 +106,15 @@ export GOROOT=$(go env GOROOT)
 export GOPRIVATE=github.com/nextmv-io/*
 export PATH=$PATH:$GOPATH/bin
 
-source ~/dotfiles/lib/zsh-autoenv/autoenv.zsh
-source ~/dotfiles/lib/zsh-autoenv/autoenv.zsh
+# source ~/dotfiles/lib/zsh-autoenv/autoenv.zsh
+# source ~/dotfiles/lib/zsh-autoenv/autoenv.zsh
 
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+
 if command -v pyenv 1>/dev/null 2>&1; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
   eval "$(pyenv init -)"
 fi
