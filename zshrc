@@ -101,12 +101,11 @@ PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
 # use android java
 export JAVA_HOME='/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home'
 
-export GOPATH=$(go env GOPATH)
-export GOROOT=$(go env GOROOT)
-export GOPRIVATE=github.com/nextmv-io/*
-export PATH=$PATH:$GOPATH/bin
+# export GOPATH=$(go env GOPATH)
+# export GOROOT=$(go env GOROOT)
+# export GOPRIVATE=github.com/nextmv-io/*
+# export PATH=$PATH:$GOPATH/bin
 
-# source ~/dotfiles/lib/zsh-autoenv/autoenv.zsh
 # source ~/dotfiles/lib/zsh-autoenv/autoenv.zsh
 
 # Added by serverless binary installer
