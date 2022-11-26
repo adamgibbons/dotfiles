@@ -48,19 +48,16 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew bundler colorize gem git github gitignore heroku node npm zsh-nvm ruby sublime)
+plugins=(aws brew bundler colorize gem git github gitignore node npm nvm ruby vscode yarn)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:~/.composer/vendor/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 PATH=$PATH:node_modules/.bin
-PATH=$PATH:/usr/local/heroku/bin
 PATH=$PATH:$HOME/npm/bin
-PATH=$PATH:$HOME/.meteor
-ulimit -n 2048
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -89,10 +86,10 @@ ulimit -n 2048
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-eval "$(rbenv init -)"
-export PATH="/usr/local/opt/mongodb-community@3.2/bin:$PATH"
+# eval "$(rbenv init -)"
+# export PATH="/usr/local/opt/mongodb-community@3.2/bin:$PATH"
 
-PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
+# PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
 
 # tabtab source for packages
 # uninstall by removing these lines
@@ -101,15 +98,7 @@ PATH="/usr/local/opt/mongodb-community@3.6/bin:$PATH"
 # use android java
 export JAVA_HOME='/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home'
 
-# export GOPATH=$(go env GOPATH)
-# export GOROOT=$(go env GOROOT)
-# export GOPRIVATE=github.com/nextmv-io/*
-# export PATH=$PATH:$GOPATH/bin
-
 # source ~/dotfiles/lib/zsh-autoenv/autoenv.zsh
-
-# Added by serverless binary installer
-export PATH="$HOME/.serverless/bin:$PATH"
 
 if command -v pyenv 1>/dev/null 2>&1; then
   export PYENV_ROOT="$HOME/.pyenv"
