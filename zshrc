@@ -22,9 +22,6 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
-# Uncomment the following line to disable auto-setting terminal title.
-#DISABLE_AUTO_TITLE="true"
-
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
@@ -108,3 +105,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 PATH="/Users/adamgibbons/Library/Python/3.9/bin:$PATH"
+
+PATH="/opt/homebrew/opt/libpq/bin:$PATH"'
+export AWS_PROFILE=dev
