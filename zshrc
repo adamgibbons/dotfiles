@@ -106,5 +106,5 @@ fi
 
 PATH="/Users/adamgibbons/Library/Python/3.9/bin:$PATH"
 
-PATH="/opt/homebrew/opt/libpq/bin:$PATH"'
+PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export AWS_PROFILE=dev
